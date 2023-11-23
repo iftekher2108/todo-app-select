@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background: slategrey;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .todo-app {
+            min-width: 20rem;
+            height: auto;
+            padding: 20px;
+            background: darkslategray;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input {
+            padding: 10px 30px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+
+        button {
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            color: white;
+        }
+
+        th,td {
+            padding: 10px;
+            border: 1px solid white;
+            text-align: center;
+        }
+        .delete-btn {
+            width: 50%;
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+  
+    <div class="todo-app">
+        <div class="add-section">
+         <input type="text" placeholder="text here" maxlength="50" class="text-input">  
+         <button class="add-btn">add text</button> 
+        </div>
+
+        <button class="delete-btn">delete</button>
+        <table class="note">
+            <tr>
+                <th><input type="checkbox" class="select_all"></th>
+                <th>Note</th>
+            </tr>
+
+        </table>
+        
+
+
+    </div>
+
+
+
+
+    <script src="./src/jquery/dist/jquery.min.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
